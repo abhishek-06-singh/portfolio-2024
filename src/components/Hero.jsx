@@ -29,7 +29,7 @@ const Hero = () => {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <span className="head text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-lime-600 to-sky-600 bg-clip-text text-transparent">
+            <span className=" text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-lime-600 to-sky-600 bg-clip-text text-transparent">
               Avi.dev()
             </span>
           </div>
@@ -61,7 +61,7 @@ const Hero = () => {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-neutral-950 bg-opacity-95 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <span className="head text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-lime-600 to-sky-600 bg-clip-text text-transparent ">
+              <span className=" text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-lime-600 to-sky-600 bg-clip-text text-transparent ">
                 Avi.dev()
               </span>
 
