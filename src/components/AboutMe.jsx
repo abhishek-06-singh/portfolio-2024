@@ -3,6 +3,7 @@ import me from "../images/s0_editor_sid904c5475-69df-4766-b016-f6e0c3663198_resu
 import { FaReact } from "react-icons/fa6";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
+import { TfiGithub } from "react-icons/tfi";
 
 const AboutMe = () => {
   return (
@@ -37,18 +38,18 @@ const AboutMe = () => {
                   With nearly one year of experience, I am a Front-End/UI
                   Developer specializing in{" "}
                   <span className="text-blue-600">React,</span>{" "}
-                  <span className="text-purple-600"> Redux,</span>
-                  <span className="text-yellow-600"> JavaScript, </span>
-                  and <span className="text-indigo-500"> Tailwind CSS</span> .
-                  My passion lies in creating visually appealing and responsive
-                  web applications. I bring a keen eye for design and a
-                  commitment to clean, efficient code to every project. Explore
-                  my portfolio to see how I bring innovation and functionality
-                  together in the world of front-end development.
+                  <span className="text-purple-600">Redux,</span>
+                  <span className="text-yellow-600">JavaScript, </span>
+                  and <span className="text-indigo-500">Tailwind CSS</span>. My
+                  passion lies in creating visually appealing and responsive web
+                  applications. I bring a keen eye for design and a commitment
+                  to clean, efficient code to every project.
                 </p>
               </blockquote>
 
-              <div className="flex space-x-5 mt-3">
+              <div className="flex space-x-5 mt-3 ml-auto">
+                {" "}
+                {/* Adjusted the position with ml-auto */}
                 <FaReact className="text-blue-600 text-3xl" />
                 <SiJavascript className="text-yellow-600 text-3xl" />
                 <SiTailwindcss className="text-indigo-500 text-3xl" />
@@ -62,10 +63,17 @@ const AboutMe = () => {
                   React Developer,
                   <span className="text-blue-600 font-bold"> OyeLabs</span>
                 </div>
+                <a href="https://github.com/abhishek-06-singh">
+                  <div className="flex space-x-4 text-gray-300 mt-3 cursor-default">
+                    <TfiGithub className="text-3xl mr-3 text-blue-500 cursor-pointer" />
+                    My Github
+                  </div>
+                </a>
               </figcaption>
             </figure>
           </div>
         </div>
+        <div></div>
       </div>
     </div>
   );
