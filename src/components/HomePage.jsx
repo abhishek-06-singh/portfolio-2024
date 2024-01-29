@@ -3,14 +3,17 @@ import Hero from "./Hero";
 import Testemonials from "./testemonials/Testemonials";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
+import Projects from "./projects/Projects";
 
 const HomePage = () => {
   return (
     <div>
       <Hero />
-      <Skills />
       <AboutMe />
+      <Skills />
+
       <Testemonials />
+      <Projects />
     </div>
   );
 };
