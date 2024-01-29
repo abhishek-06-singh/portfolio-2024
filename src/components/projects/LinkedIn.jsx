@@ -55,13 +55,13 @@ const LinkedIn = () => {
               </div>
               <div className="mt-10 flex">
                 <a
-                  href="https://react-breeze-ui-library.vercel.app/"
+                  href="https://illustrious-smakager-a05a4d.netlify.app/"
                   className="text-sm font-semibold leading-6 text-green-400"
                 >
                   See live project <span aria-hidden="true">&rarr;</span>
                 </a>
                 <a
-                  href="https://github.com/abhishek-06-singh/ReactBreeze-UI-Library"
+                  href="https://github.com/abhishek-06-singh/LinkedIn-Clone-ReactJS?tab=readme-ov-file"
                   className="bg-green-500 p-2 rounded-full text-gray-200 ml-auto w-32"
                 >
                   {" "}

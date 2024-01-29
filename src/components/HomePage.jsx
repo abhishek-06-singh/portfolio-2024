@@ -4,6 +4,7 @@ import Testemonials from "./testemonials/Testemonials";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import Projects from "./projects/Projects";
+import Experience from "./Experience";
 
 const HomePage = () => {
   return (
@@ -11,9 +12,10 @@ const HomePage = () => {
       <Hero />
       <AboutMe />
       <Skills />
+      <Projects />
 
       <Testemonials />
-      <Projects />
+      <Experience />
     </div>
   );
 };
