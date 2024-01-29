@@ -1,6 +1,7 @@
 import React from "react";
 import ReactBreeze from "./ReactBreeze";
 import FoodFiesta from "./FoodFiesta";
+import LinkedIn from "./LinkedIn";
 
 const Projects = () => {
   return (
@@ -14,6 +15,7 @@ const Projects = () => {
       </p>
       <ReactBreeze />
       <FoodFiesta />
+      <LinkedIn />
     </div>
   );
 };

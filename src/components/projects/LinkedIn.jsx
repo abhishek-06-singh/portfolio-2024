@@ -1,10 +1,10 @@
 import React from "react";
-import foodfiesta from "../../images/Screenshot 2024-01-29 233526.png";
+import linkedin from "../../images/linked.png";
 import { FaReact } from "react-icons/fa6";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 
-const FoodFiesta = () => {
+const LinkedIn = () => {
   return (
     <div className="bg-neutral-950 py-24 sm:py-32">
       <div className="relative isolate">
@@ -12,21 +12,27 @@ const FoodFiesta = () => {
           <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
             <img
               className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-              src={foodfiesta}
+              src={linkedin}
               alt=""
             />
             <div className="w-full flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                FoodFiesta
+                LinkedIn Clone
               </h2>
               <ul className="mt-6 text-lg leading-8 text-gray-300 text-start">
                 <li>
-                  Features Galore: Restaurants: Explore a curated selection of
-                  local eateries. Dishes: A diverse menu catering to every
-                  palate. Cart & Payments: Effortless ordering with secure
-                  transactions. Directions Map: Navigate to your favorite spot
-                  hassle-free. Profiles & Order History: A personalized touch
-                  for a delightful experience.
+                  Successfully built a LinkedIn clone using ReactJS, Styled
+                  Components, and Redux, which received positive feedback from
+                  over 100 users.
+                </li>
+                <li>
+                  Implemented a variety of features, including the ability to
+                  post images, videos, and text, resulting in over 500
+                  user-generated content items posted to the platform.
+                </li>
+                <li>
+                  Optimized the user experience by 30% , implementing responsive
+                  design principles.
                 </li>
               </ul>
               <div className="mt-10 grid grid-cols-1 gap-x-2 gap-y-3 text-base leading-7 text-white sm:grid-cols-2">
@@ -49,13 +55,13 @@ const FoodFiesta = () => {
               </div>
               <div className="mt-10 flex">
                 <a
-                  href="https://foodfiesta.vercel.app/"
+                  href="https://react-breeze-ui-library.vercel.app/"
                   className="text-sm font-semibold leading-6 text-green-400"
                 >
                   See live project <span aria-hidden="true">&rarr;</span>
                 </a>
                 <a
-                  href="https://github.com/abhishek-06-singh/foodfiesta"
+                  href="https://github.com/abhishek-06-singh/ReactBreeze-UI-Library"
                   className="bg-green-500 p-2 rounded-full text-gray-200 ml-auto w-32"
                 >
                   {" "}
@@ -82,4 +88,4 @@ const FoodFiesta = () => {
   );
 };
 
-export default FoodFiesta;
+export default LinkedIn;
