@@ -1,17 +1,21 @@
 import { useState } from "react";
+import "../css/extra.css";
 import { Dialog } from "@headlessui/react";
 // import { ArchiveIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
-import { FaReact } from "react-icons/fa6";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import { FaClosedCaptioning, FaReact } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
+import { FaBarsProgress } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "About Me", href: "#" },
   { name: "Projects", href: "#" },
   { name: "Experience", href: "#" },
-  { name: "Contact Me", href: "#" },
+  { name: "Contact Me", href: "/contact" },
 ];
 
 const Hero = () => {
@@ -25,23 +29,15 @@ const Hero = () => {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=lime&shade=600"
-                alt=""
-              />
-            </a>
+            <span className="head text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-lime-600 to-sky-600 bg-clip-text text-transparent">
+              Avi.dev()
+            </span>
           </div>
           <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
+            <FaBarsProgress
               onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-            </button>
+              className="text-3xl font-bold text-lime-600 hover:text-lime-700 "
+            />
           </div>
           <div className="hidden lg:flex lg:gap-x-12  ">
             {navigation.map((item) => (
@@ -63,22 +59,16 @@ const Hero = () => {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-neutral-950 bg-opacity-95 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=lime&shade=600"
-                  alt=""
-                />
-              </a>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-100"
+              <span className="head text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-lime-600 to-sky-600 bg-clip-text text-transparent ">
+                Avi.dev()
+              </span>
+
+              <IoIosCloseCircleOutline
+                className="text-lime-600 text-3xl font-bold cursor-pointer"
                 onClick={() => setMobileMenuOpen(false)}
-              >
-                hello
-              </button>
+              />
             </div>
             <div className="mt-6 flow-root ">
               <div className="-my-6 divide-y divide-gray-500/10">
@@ -87,7 +77,7 @@ const Hero = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-200 hover:bg-lime-600"
                     >
                       {item.name}
                     </a>
@@ -102,7 +92,7 @@ const Hero = () => {
 
       <div className="relative isolate px-6  lg:px-8">
         <div
-          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl "
           aria-hidden="true"
         >
           <div
@@ -113,7 +103,7 @@ const Hero = () => {
             }}
           />
         </div>
-        <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-5xl py-56 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-gray-500/10 hover:ring-gray-400/20 space-x-4 flex">
               HI , MY NAME IS
@@ -141,9 +131,12 @@ const Hero = () => {
               I'm working as a React Developer at OyeLabs.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <button className="lg:w-1/2 md:w-full sm:w-full bg-gradient-to-r from-teal-600 via-teal-800 to-gray-900 text-white font-semibold rounded-full p-3 hover:bg-teal-800 transition-transform duration-300 ease-in-out hover:scale-95">
-                Do You Want To Work With Me ?
-              </button>
+              <Link
+                to={"/contact"}
+                className="lg:w-1/2 md:w-full sm:w-full bg-gradient-to-r from-teal-600 via-teal-800 to-gray-900 text-white font-semibold rounded-full p-3 hover:bg-teal-800 transition-transform duration-300 ease-in-out hover:scale-95"
+              >
+                <button>Do You Want To Work With Me ?</button>
+              </Link>
             </div>
           </div>
         </div>
