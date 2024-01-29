@@ -50,7 +50,7 @@ const LinkedIn = () => {
                 </span>
                 <span className="flex space-x-3">
                   <SiRedux className="text-3xl mr-2 text-violet-400" />
-                  Tailwind Css
+                  Redux
                 </span>
               </div>
               <div className="mt-10 flex">
