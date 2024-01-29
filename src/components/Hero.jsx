@@ -4,15 +4,12 @@ import { Dialog } from "@headlessui/react";
 // import { ArchiveIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import { FaClosedCaptioning, FaReact } from "react-icons/fa6";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiJavascript, SiTailwindcss } from "react-icons/si";
-import { SiRedux } from "react-icons/si";
+
 import { FaBarsProgress } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "About Me", href: "#" },
+  { name: "About Me", href: "/aboutme" },
   { name: "Projects", href: "#" },
   { name: "Experience", href: "#" },
   { name: "Contact Me", href: "/contact" },
@@ -103,7 +100,7 @@ const Hero = () => {
             }}
           />
         </div>
-        <div className="mx-auto max-w-5xl py-56 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-5xl pt-56 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-gray-500/10 hover:ring-gray-400/20 space-x-4 flex">
               HI , MY NAME IS
@@ -133,30 +130,11 @@ const Hero = () => {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 to={"/contact"}
-                className="lg:w-1/2 md:w-full sm:w-full bg-gradient-to-r from-teal-600 via-teal-800 to-gray-900 text-white font-semibold rounded-full p-3 hover:bg-teal-800 transition-transform duration-300 ease-in-out hover:scale-95"
+                className="lg:w-1/2 md:w-full sm:w-full bg-gradient-to-r from-green-700 to-green-900 text-white font-semibold rounded-full p-3 hover:bg-teal-800 transition-transform duration-300 ease-in-out hover:scale-95"
               >
                 <button>Do You Want To Work With Me ?</button>
               </Link>
             </div>
-          </div>
-        </div>
-
-        <div className="mx-auto max-w-7xl flex flex-col lg:flex-row justify-center text-gray-800 text-3xl lg:text-4xl lg:space-x-32 md:space-x-10 -top-7">
-          <div className="flex flex-col lg:flex-row  items-center mb-4 lg:mb-0">
-            <FaReact className="text-5xl lg:text-6xl text-gray-800 mb-2 mr-3" />
-            React
-          </div>
-          <div className="flex flex-col lg:flex-row  items-center mb-4 lg:mb-0">
-            <SiJavascript className="text-5xl lg:text-6xl text-gray-800 mr-3 mb-2" />
-            Javascript
-          </div>
-          <div className="flex flex-col lg:flex-row  items-center mb-4 lg:mb-0">
-            <SiTailwindcss className="text-5xl lg:text-6xl text-gray-800 mr-3 mb-2" />
-            Tailwind CSS
-          </div>
-          <div className="flex flex-col lg:flex-row  items-center mb-4 lg:mb-0">
-            <SiRedux className="text-5xl lg:text-6xl text-gray-800 mb-2 mr-3" />
-            Redux
           </div>
         </div>
       </div>

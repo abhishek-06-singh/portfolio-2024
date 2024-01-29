@@ -50,7 +50,7 @@ const testimonials = [
     ],
     [
       {
-        body: "Abhishek made my an awesome portfolio template for me , that dark more feature is something i am looking for , thank you ",
+        body: "Abhishek made an awesome portfolio template for me , that dark more feature is something i am looking for , thank you ",
         author: {
           name: "Vivek Khare",
           handle: "vivekkhare130@gmail.com",

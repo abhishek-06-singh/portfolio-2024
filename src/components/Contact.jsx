@@ -4,6 +4,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { FcHome } from "react-icons/fc";
 import { FaEnvelopeOpenText } from "react-icons/fa6";
 import { IoPhonePortraitOutline } from "react-icons/io5";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -141,7 +143,11 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-200">
+            <Link to={"/"}>
+              <FaArrowAltCircleLeft className="text-3xl text-green-600 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-green-500" />
+            </Link>
+
+            <h2 className="text-4xl font-bold tracking-tight text-gray-200 ">
               Get in touch
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-400">
