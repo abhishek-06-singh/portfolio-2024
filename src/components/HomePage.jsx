@@ -1,21 +1,20 @@
 import React from "react";
 import Hero from "./Hero";
-import Testemonials from "./testemonials/Testemonials";
-import AboutMe from "./AboutMe";
-import Skills from "./Skills";
-import Projects from "./projects/Projects";
-import Experience from "./Experience";
+import TestemonialsSlide from "./testemonials/TestemonialsSlide";
+import AmoutMeSlide from "./AmoutMeSlide";
+import SkillsSlide from "./SkillsSlide";
+import ProjectsSlide from "./projects/ProjectsSlide";
+import ExperienceSlide from "./ExperienceSlide";
 
 const HomePage = () => {
   return (
     <div>
       <Hero />
-      <AboutMe />
-      <Skills />
-      <Projects />
-
-      <Testemonials />
-      <Experience />
+      <AmoutMeSlide />
+      <SkillsSlide />
+      <ProjectsSlide />
+      <TestemonialsSlide />
+      <ExperienceSlide />
     </div>
   );
 };
