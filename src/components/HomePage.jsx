@@ -5,6 +5,7 @@ import AmoutMeSlide from "./AmoutMeSlide";
 import SkillsSlide from "./SkillsSlide";
 import ProjectsSlide from "./projects/ProjectsSlide";
 import ExperienceSlide from "./ExperienceSlide";
+import NewsLetter from "./NewsLetter";
 
 const HomePage = () => {
   return (
@@ -13,8 +14,9 @@ const HomePage = () => {
       <AmoutMeSlide />
       <SkillsSlide />
       <ProjectsSlide />
-      <TestemonialsSlide />
       <ExperienceSlide />
+      <TestemonialsSlide />
+      <NewsLetter />
     </div>
   );
 };
