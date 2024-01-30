@@ -25,7 +25,7 @@ const experience = [
 ];
 const Experience = () => {
   return (
-    <div className="bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-purple-950 via-neutral-950 to-neutral-950 py-24 sm:py-32">
+    <div className="bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-[#9322a4] via-neutral-950 to-neutral-950 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Link to={"/"}>
           <FaArrowAltCircleLeft className="text-3xl text-green-600 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-green-500" />

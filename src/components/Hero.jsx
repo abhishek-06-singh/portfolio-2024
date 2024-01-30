@@ -4,6 +4,7 @@ import { Dialog } from "@headlessui/react";
 // import { ArchiveIcon } from "@heroicons/react/outline";
 import { motion } from "framer-motion";
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import AbhshekResume from "../resume/Abhishek-singh.pdf";
 
 import { FaBarsProgress } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -127,13 +128,20 @@ const Hero = () => {
               I Like to build amazing UI/UX experience for humans 🚀. Currently,
               I'm working as a React Developer at OyeLabs.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-14 flex flex-col items-center justify-center gap-x-6 lg:flex-row ">
               <Link
                 to={"/contact"}
-                className="lg:w-1/2 md:w-full sm:w-full bg-gradient-to-r from-green-700 to-green-900 text-white font-semibold rounded-full p-3 hover:bg-teal-800 transition-transform duration-300 ease-in-out hover:scale-95"
+                className="rounded-full bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
               >
-                <button>Do You Want To Work With Me ?</button>
+                <button>Want To Work With Me ?</button>
               </Link>
+              <a
+                href={AbhshekResume}
+                download="AbhishekSinghResume.pdf"
+                className="mt-4 lg:mt-0 rounded-full bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Download resume.
+              </a>
             </div>
           </div>
         </div>
