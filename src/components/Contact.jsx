@@ -144,10 +144,10 @@ const Contact = () => {
               </div>
             </div>
             <Link to={"/"}>
-              <FaArrowAltCircleLeft className="text-3xl text-green-600 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-green-500" />
+              <FaArrowAltCircleLeft className="text-3xl text-pink-600 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-pink-500" />
             </Link>
 
-            <h2 className="text-4xl font-bold tracking-tight text-gray-200 ">
+            <h2 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-pink-600 to-sky-600 bg-clip-text text-transparent ">
               Get in touch
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-400">
@@ -341,7 +341,7 @@ const Contact = () => {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-green-500 px-3.5 py-2.5 text-center text-sm font-semibold text-gray-200 shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
+                className="rounded-md bg-gradient-to-r from-teal-500 via-pink-600 to-sky-600   px-3.5 py-2.5 text-center text-sm font-semibold text-gray-200 shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500"
               >
                 Send message
               </button>

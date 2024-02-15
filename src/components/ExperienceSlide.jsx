@@ -26,7 +26,7 @@ const ExperienceSlide = () => {
     <div className="bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-[#9322a4] via-neutral-950 to-neutral-950 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className=" font-bold leading-7 text-green-600 text-xl">
+          <h2 className=" font-bold leading-7 text-pink-600 text-xl">
             Experience
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
@@ -60,7 +60,7 @@ const ExperienceSlide = () => {
             {experience.map((experience) => (
               <div key={experience.name} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-500">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-600"></div>
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-pink-600"></div>
                   {experience.project}
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-400">

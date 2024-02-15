@@ -11,7 +11,7 @@ const AboutMe = () => {
   return (
     <>
       <div className="bg-neutral-950 pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
-        <div className="bg-gradient-to-r from-green-800 to-green-950 pb-20 sm:pb-24 xl:pb-0 ">
+        <div className="bg-gradient-to-r from-pink-800 to-pink-950 pb-20 sm:pb-24 xl:pb-0 ">
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
             <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
               <div className="relative aspect-[4/3] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
@@ -43,10 +43,10 @@ const AboutMe = () => {
                     <span className="text-blue-600">React,</span>{" "}
                     <span className="text-purple-600">Redux,</span>
                     <span className="text-yellow-600">JavaScript, </span>
-                    and <span className="text-indigo-500">Tailwind CSS</span>.
-                    My passion lies in creating visually appealing and
-                    responsive web applications. I bring a keen eye for design
-                    and a commitment to clean, efficient code to every project.
+                    and <span className="text-pink-500">Tailwind CSS</span>. My
+                    passion lies in creating visually appealing and responsive
+                    web applications. I bring a keen eye for design and a
+                    commitment to clean, efficient code to every project.
                   </p>
                 </blockquote>
 
@@ -55,7 +55,7 @@ const AboutMe = () => {
                   {/* Adjusted the position with ml-auto */}
                   <FaReact className="text-blue-600 text-3xl" />
                   <SiJavascript className="text-yellow-600 text-3xl" />
-                  <SiTailwindcss className="text-indigo-500 text-3xl" />
+                  <SiTailwindcss className="text-pink-500 text-3xl" />
                   <SiRedux className="text-purple-600 text-3xl" />
                 </div>
                 <figcaption className="mt-8 text-base">
@@ -73,7 +73,7 @@ const AboutMe = () => {
                     </div>
                   </a>
                   <Link to={"/"}>
-                    <FaArrowAltCircleLeft className=" mt-3 text-3xl text-green-300 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-green-500 " />
+                    <FaArrowAltCircleLeft className=" mt-3 text-3xl text-pink-300 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-pink-500 " />
                   </Link>
                 </figcaption>
               </figure>

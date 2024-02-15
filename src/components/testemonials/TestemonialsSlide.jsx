@@ -95,10 +95,10 @@ const TestemonialsSlide = () => {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-xl  font-bold leading-8 tracking-tight text-green-600">
+          <h2 className="text-xl  font-bold leading-8 tracking-tight text-pink-600">
             Testimonials
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-500 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-pink-600 to-sky-600 bg-clip-text text-transparent sm:text-4xl">
             I worked with lots of amazing people
           </p>
         </div>

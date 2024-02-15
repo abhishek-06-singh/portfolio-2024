@@ -94,15 +94,15 @@ const Testemonials = () => {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-xl  font-bold leading-8 tracking-tight text-green-600">
+          <h2 className="text-xl  font-bold leading-8 tracking-tight text-pink-600">
             Testimonials
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-500 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-pink-600 to-sky-600 bg-clip-text text-transparent sm:text-4xl">
             I worked with lots of amazing people
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-300 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-green-600 sm:bg-opacity-50 sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
+          <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-pink-600 sm:bg-opacity-50 sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
             <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-900">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
@@ -145,7 +145,7 @@ const Testemonials = () => {
                   {column.map((testimonial) => (
                     <figure
                       key={testimonial.author.handle}
-                      className="rounded-2xl bg-green-900  p-6 shadow-lg ring-1 ring-gray-900/5"
+                      className="rounded-2xl bg-pink-900  p-6 shadow-lg ring-1 ring-gray-900/5"
                     >
                       <blockquote className="text-gray-950 font-semibold">
                         <p>{`“${testimonial.body}”`}</p>
