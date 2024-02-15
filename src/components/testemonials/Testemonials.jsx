@@ -23,6 +23,7 @@ const testimonials = [
           imageUrl: nitish,
         },
       },
+
       // More testimonials...
     ],
     [
@@ -144,7 +145,7 @@ const Testemonials = () => {
                   {column.map((testimonial) => (
                     <figure
                       key={testimonial.author.handle}
-                      className="rounded-2xl bg-green-600 bg-opacity-50 p-6 shadow-lg ring-1 ring-gray-900/5"
+                      className="rounded-2xl bg-green-900  p-6 shadow-lg ring-1 ring-gray-900/5"
                     >
                       <blockquote className="text-gray-950 font-semibold">
                         <p>{`“${testimonial.body}”`}</p>

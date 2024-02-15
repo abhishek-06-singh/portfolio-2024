@@ -23,6 +23,7 @@ const testimonials = [
           imageUrl: nitish,
         },
       },
+
       // More testimonials...
     ],
     [
@@ -102,8 +103,8 @@ const TestemonialsSlide = () => {
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-300 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-green-600 sm:bg-opacity-50 sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
-            <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-900">
+          <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white/10 sm:bg-opacity-50 sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
+            <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-400">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
@@ -116,7 +117,7 @@ const TestemonialsSlide = () => {
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
                 </div>
-                <div className="text-gray-900">{`@${featuredTestimonial.author.handle}`}</div>
+                <div className="text-gray-300">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
               <img
                 className="h-10 w-auto flex-none"
@@ -145,9 +146,9 @@ const TestemonialsSlide = () => {
                   {column.map((testimonial) => (
                     <figure
                       key={testimonial.author.handle}
-                      className="rounded-2xl bg-green-600 bg-opacity-50 p-6 shadow-lg ring-1 ring-gray-900/5"
+                      className="rounded-2xl bg-white/10 p-6 shadow-lg ring-1 ring-gray-900/5"
                     >
-                      <blockquote className="text-gray-950 font-semibold">
+                      <blockquote className="text-gray-400 font-semibold">
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
@@ -157,10 +158,10 @@ const TestemonialsSlide = () => {
                           alt=""
                         />
                         <div>
-                          <div className="font-semibold">
+                          <div className="font-semibold text-gray-300">
                             {testimonial.author.name}
                           </div>
-                          <div className="text-gray-300">{`@${testimonial.author.handle}`}</div>
+                          <div className="text-gray-400">{`@${testimonial.author.handle}`}</div>
                         </div>
                       </figcaption>
                     </figure>
