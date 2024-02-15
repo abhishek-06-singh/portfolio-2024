@@ -132,14 +132,14 @@ const Hero = () => {
             <div className="mt-14 flex flex-col items-center justify-center gap-x-6 lg:flex-row ">
               <span
                 onClick={() => navigate("/contact")} // Use navigate instead of href
-                className="cursor-pointer rounded-full bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
+                className="cursor-pointer rounded-full tracking-tight bg-gradient-to-r from-sky-500 to-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
               >
                 <button>Want To Work With Me ?</button>
               </span>
               <a
                 href={AbhshekResume}
                 download="AbhishekSinghResume.pdf"
-                className="mt-4 lg:mt-0 rounded-full bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="mt-4 lg:mt-0 rounded-full bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-gray-300 shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Download resume.
               </a>
