@@ -101,7 +101,7 @@ const Contact = () => {
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-gray-200/5 lg:w-1/2">
               <svg
-                className="absolute inset-0 h-full w-full stroke-lime-600 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                className="absolute inset-0 h-full w-full  stroke-gradient-to-r from-teal-500 via-pink-600 to-sky-600  [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
               >
                 <defs>

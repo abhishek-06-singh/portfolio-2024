@@ -13,6 +13,7 @@ const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Experience", href: "/experience" },
   { name: "Contact Me", href: "/contact" },
+  { name: "Blog Posts", href: "/blogposts" },
 ];
 
 const Hero = () => {
