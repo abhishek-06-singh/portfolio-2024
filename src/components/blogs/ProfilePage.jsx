@@ -24,7 +24,7 @@ const ProfilePage = () => {
         className="relative py-16 "
       >
         <div className="container mx-auto px-4 ">
-          <div className="relative flex flex-col min-w-0 break-words bg-gradient-to-r from-teal-400/30 to-sky-400/30 w-full mb-6 shadow-xl rounded-lg -mt-64 p-10 rounded-b-[5rem]">
+          <div className="relative flex flex-col min-w-0 break-words bg-gradient-to-r from-teal-400/30 to-pink-400/50 w-full mb-6 shadow-xl rounded-lg -mt-64 p-10 rounded-b-[5rem]">
             <div className="px-6">
               <div className="flex flex-wrap justify-center">
                 <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
