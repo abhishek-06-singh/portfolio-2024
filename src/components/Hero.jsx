@@ -94,7 +94,7 @@ const Hero = () => {
                     <span
                       key={item.name}
                       onClick={() => navigate(item.href)} // Use navigate instead of href
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:bg-pink-600 cursor-pointer"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-400 hover:bg-pink-600 cursor-pointer"
                     >
                       {item.name}
                     </span>

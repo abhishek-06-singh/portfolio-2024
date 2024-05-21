@@ -3,6 +3,7 @@ import ReactBreeze from "./ReactBreeze";
 import FoodFiesta from "./FoodFiesta";
 import LinkedIn from "./LinkedIn";
 import EcomProjects from "./EcomProjects";
+import FitQuest from "./FitQuest";
 const ProjectsSlide = () => {
   return (
     <div className="bg-neutral-950 flex text-center flex-col mt-5">
@@ -13,6 +14,7 @@ const ProjectsSlide = () => {
       <p className="mt-2 text-3xl font-bold  bg-gradient-to-r from-teal-500 to-pink-400 bg-clip-text text-transparent sm:text-4xl lg:h-12">
         These are some of my projects.
       </p>
+      <FitQuest />
       <ReactBreeze />
       <EcomProjects />
       <FoodFiesta />

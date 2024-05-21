@@ -5,6 +5,7 @@ import LinkedIn from "./LinkedIn";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import EcomProjects from "./EcomProjects";
+import FitQuest from "./FitQuest";
 
 const Projects = () => {
   return (
@@ -19,6 +20,7 @@ const Projects = () => {
       <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-pink-600 to-sky-600 bg-clip-text text-transparent sm:text-4xl">
         I worked on lots of projects .
       </p>
+      <FitQuest />
       <ReactBreeze />
       <EcomProjects />
       <FoodFiesta />

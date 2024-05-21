@@ -6,6 +6,7 @@ import SkillsSlide from "./SkillsSlide";
 import ProjectsSlide from "./projects/ProjectsSlide";
 import ExperienceSlide from "./ExperienceSlide";
 import NewsLetter from "./NewsLetter";
+import HeroTwo from "./HeroTwo";
 
 const HomePage = () => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaReact } from "react-icons/fa6";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { SiRedux } from "react-icons/si";
 
 const SkillsSlide = () => {
@@ -21,6 +22,10 @@ const SkillsSlide = () => {
       <div className="flex flex-col lg:flex-row  items-center mb-4 lg:mb-0">
         <SiRedux className="text-5xl lg:text-6xl text-gray-800 mb-2 mr-3" />
         Redux
+      </div>
+      <div className="flex flex-col lg:flex-row  items-center mb-4 lg:mb-0">
+        <TbBrandNextjs className="text-5xl lg:text-6xl text-gray-800 mb-2 mr-3" />
+        Next.js
       </div>
     </div>
   );
