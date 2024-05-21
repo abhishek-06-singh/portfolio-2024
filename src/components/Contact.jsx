@@ -143,7 +143,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <Link to={"/"}>
+            <Link to={"/home"}>
               <FaArrowAltCircleLeft className="text-3xl text-pink-600 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-pink-500" />
             </Link>
 

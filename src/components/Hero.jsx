@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // import useNavigate
 import "../css/extra.css";
 import { Dialog } from "@headlessui/react";
@@ -7,6 +7,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import AbhshekResume from "../resume/Abhishek-singh.pdf";
 import { FaBarsProgress } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import CLOUDS from "vanta/src/vanta.clouds";
 
 const navigation = [
   { name: "About Me", href: "/aboutme" },
@@ -17,12 +18,28 @@ const navigation = [
 ];
 
 const Hero = () => {
+  useEffect(() => {
+    CLOUDS({
+      el: "#vanta",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 400.0,
+      minWidth: 200.0,
+      backgroundColor: 0x0,
+      skyColor: 0x0,
+      cloudColor: 0xa7b2c3,
+      sunColor: 0x2b0055,
+      sunlightColor: 0x0,
+      speed: 2.0,
+    });
+  }, []);
   const navigate = useNavigate(); // Initialize useNavigate
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-neutral-950 min-h-screen">
+    <div className="bg-neutral-950 h-screen">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -77,7 +94,7 @@ const Hero = () => {
                     <span
                       key={item.name}
                       onClick={() => navigate(item.href)} // Use navigate instead of href
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-200 hover:bg-pink-600 cursor-pointer"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:bg-pink-600 cursor-pointer"
                     >
                       {item.name}
                     </span>
@@ -90,22 +107,17 @@ const Hero = () => {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6  lg:px-8">
+      <div className="relative isolate px-6  lg:px-8 ">
         <div
-          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl "
+          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-sm "
           aria-hidden="true"
+          id="vanta"
         >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#c51db7] to-[#3b8efc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
+          <div className="h-screen" />
         </div>
-        <div className="mx-auto max-w-5xl pt-56 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-5xl pt-56 sm:py-48 lg:py-56 ">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-gray-500/10 hover:ring-gray-400/20 space-x-4 flex">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 ring-1 ring-gray-500/10 hover:ring-gray-400/20 space-x-4 flex">
               HI , MY NAME IS
               <a href="#" className="font-semibold text-pink-600">
                 <span className="absolute inset-0" aria-hidden="true" />
@@ -113,8 +125,8 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="text-center">
-            <h1 className=" text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-pink-600 to-sky-600 bg-clip-text text-transparent sm:text-5xl lg:h-[4rem] md:h-[5rem] sm:h-[7rem]">
+          <div className="text-center h-screen pb-20">
+            <h1 className=" text-3xl font-bold  bg-gradient-to-r from-teal-500 via-pink-600 to-sky-600 bg-clip-text text-transparent sm:text-5xl lg:h-[4rem] md:h-[5rem] sm:h-[7rem] tracking-tighter">
               Abhishek Singh Chauhan{" "}
               <span className="text-pink-400 animate-pulse"> .</span>
             </h1>
@@ -122,15 +134,15 @@ const Hero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2 }}
-              className="text-4xl font-bold tracking-tight bg-gradient-to-r from-teal-500 via-pink-600 to-sky-600 bg-clip-text text-transparent sm:text-6xl "
+              className="text-4xl font-bold tracking-tighter bg-gradient-to-r from-teal-700 via-pink-700 to-sky-700 bg-clip-text text-transparent sm:text-6xl "
             >
               I am a Frontend Developer
             </motion.h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300 ">
+            <p className="mt-6 text-lg leading-8 text-gray-50 ">
               I Like to build amazing UI/UX experience for humans 🚀. Currently,
               I'm working as a React Developer at OyeLabs.
             </p>
-            <div className="mt-14 flex flex-col items-center justify-center gap-x-6 lg:flex-row ">
+            <div className="mt-14 flex flex-col items-center justify-center gap-x-6 lg:flex-row pb-44 ">
               <span
                 onClick={() => navigate("/contact")} // Use navigate instead of href
                 className="cursor-pointer rounded-full tracking-tight bg-gradient-to-r from-sky-500 to-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"

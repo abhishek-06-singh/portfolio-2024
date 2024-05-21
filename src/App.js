@@ -6,13 +6,15 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/projects/Projects";
 import Experience from "./components/Experience";
 import BlogsAll from "./components/blogs/BlogsAll";
+import InitialPage from "./components/InitialPage";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<InitialPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />

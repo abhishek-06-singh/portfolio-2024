@@ -72,7 +72,7 @@ const AboutMe = () => {
                       My Github
                     </div>
                   </a>
-                  <Link to={"/"}>
+                  <Link to={"/home"}>
                     <FaArrowAltCircleLeft className=" mt-3 text-3xl text-pink-300 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-pink-500 " />
                   </Link>
                 </figcaption>
