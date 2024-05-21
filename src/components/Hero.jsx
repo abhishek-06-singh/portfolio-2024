@@ -17,7 +17,7 @@ const navigation = [
 ];
 
 const Hero = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
