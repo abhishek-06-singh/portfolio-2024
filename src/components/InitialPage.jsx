@@ -1,30 +1,14 @@
 import React, { useState, useEffect } from "react";
-import CLOUDS from "vanta/src/vanta.clouds";
+
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import NameLoader from "./NameLoader";
 
 const InitialPage = () => {
   const navigate = useNavigate();
-  const [showLoader, setShowLoader] = useState(true);
-  console.log(showLoader, "showLoader");
-  useEffect(() => {
-    CLOUDS({
-      el: "#vanta",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: true,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      skyColor: 0x5463b6,
-      cloudColor: 0xa7b2c3,
-      speed: 2.0,
-    });
-  }, []);
 
   return (
     <div className="relative w-full h-[100rem] overflow-y-auto">
-      <div className="w-full h-screen z-40 fixed" id="vanta">
+      <div className="w-full h-screen z-40 fixed">
         <div className="flex lg:mx-44 md:mx-44 mx-10 h-full flex-col gap-3 lg:mt-80 md:mt-80 mt-52">
           <motion.div
             initial={{ opacity: 0 }}
