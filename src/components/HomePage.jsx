@@ -7,6 +7,7 @@ import ProjectsSlide from "./projects/ProjectsSlide";
 import ExperienceSlide from "./ExperienceSlide";
 import NewsLetter from "./NewsLetter";
 import HeroTwo from "./HeroTwo";
+import FaqsSlide from "./faqs/FaqsSlide";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <ProjectsSlide />
       <ExperienceSlide />
       <TestemonialsSlide />
+      <FaqsSlide />
       <NewsLetter />
     </div>
   );

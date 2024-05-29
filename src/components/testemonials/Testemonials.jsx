@@ -107,11 +107,6 @@ const Testemonials = () => {
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
-              <img
-                className="h-10 w-10 flex-none rounded-full bg-gray-70"
-                src={featuredTestimonial.author.imageUrl}
-                alt=""
-              />
               <div className="flex-auto">
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
@@ -151,11 +146,6 @@ const Testemonials = () => {
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img
-                          className="h-10 w-10 rounded-full bg-gray-50"
-                          src={testimonial.author.imageUrl}
-                          alt=""
-                        />
                         <div>
                           <div className="font-semibold">
                             {testimonial.author.name}

@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../images/s0_editor_sid904c5475-69df-4766-b016-f6e0c3663198_result.jpg";
+import me from "../images/me.jpg";
 import { FaReact } from "react-icons/fa6";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
@@ -11,11 +11,11 @@ const AmoutMeSlide = () => {
       <div className="bg-gradient-to-r from-pink-800 to-pink-950 pb-20 sm:pb-24 xl:pb-0 ">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
           <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
-            <div className="relative aspect-[4/3] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
+            <div className="relative aspect-[4/3] lg:mt-32 mt-0 md:-mx-8 xl:mx-0 xl:aspect-auto mb-10 md:hidden block lg:block">
               <img
-                className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
+                className="absolute inset-0  w-full rounded-2xl bg-gray-800 object-cover shadow-2xl "
                 src={me}
-                alt=""
+                alt="myimage"
               />
             </div>
           </div>

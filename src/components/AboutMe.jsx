@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../images/s0_editor_sid904c5475-69df-4766-b016-f6e0c3663198_result.jpg";
+import me from "../images/me.jpg";
 import { FaReact } from "react-icons/fa6";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
@@ -72,7 +72,7 @@ const AboutMe = () => {
                       My Github
                     </div>
                   </a>
-                  <Link to={"/home"}>
+                  <Link to={"/"}>
                     <FaArrowAltCircleLeft className=" mt-3 text-3xl text-pink-300 mb-3 hover:scale-95 transition-transform duration-300 ease-in-out hover:text-pink-500 " />
                   </Link>
                 </figcaption>

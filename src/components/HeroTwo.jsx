@@ -130,7 +130,7 @@ const HeroTwo = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 5 }}
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/")}
             className="text-white text-xl tracking-tighter rounded-xl p-3 w-4/12 bg-slate-700 mt-4 hover:shadow-xl hover:shadow-white hover:scale-95"
           >
             {" "}
